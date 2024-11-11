@@ -3,32 +3,23 @@
 
 # In[2]:
 
-
 from math import sin, cos, tan, pi
 from pylab import *
 
-
 # In[3]:
-
 
 def calcula_f(x):
   return sin(x)
 
-
 # In[4]:
-
 
 x = arange (-2*pi, 2*pi, 0.02)
 
-
 # In[5]:
-
 
 y = calcula_f(x)
 
-
 # In[6]:
-
 
 plot(x, y)
 xlabel('Variável Independente x')
@@ -39,23 +30,17 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[7]:
-
 
 def calcula_f(z):
   return cos(z)
 
-
 # In[8]:
-
 
 z = arange (-2*pi, 2*pi, 0.02)
 w = calcula_f(z)
 
-
 # In[9]:
-
 
 plot(z, w)
 xlabel('Variável Independente w')
@@ -66,9 +51,7 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[10]:
-
 
 def calcula_f(a):
   return tan(a)
@@ -76,9 +59,7 @@ def calcula_f(a):
 a = arange (-2*pi, 2*pi, 0.02)
 b = calcula_f(a)
 
-
 # In[11]:
-
 
 plot(x, y)
 plot(z, w)
@@ -91,9 +72,7 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[12]:
-
 
 plot(a, b)
 xlabel('Variável Independente a')
@@ -104,9 +83,7 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[13]:
-
 
 def calcula_a(x1):
   return sin(2*x1)
@@ -122,7 +99,6 @@ y1 = calcula_a(x1)
 y2 = calcula_b(x1)
 y3 = calcula_c(x1)
 
-
 plot(x1, y1, x1, y2, x1, y3)
 
 xlabel('Variável Independente')
@@ -133,9 +109,7 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[14]:
-
 
 def calcula_x(x0):
   return cos(2*x0)
@@ -162,9 +136,7 @@ axis([-3*pi, 3*pi, -2,2])
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[15]:
-
 
 from sympy import symbols, Lambda, sin, cos
 
@@ -172,33 +144,23 @@ x = symbols("x")
 f = Lambda(x, (x-1)/(x**2-1))
 f
 
-
 # In[16]:
-
 
 f(0)
 
-
 # In[17]:
-
 
 f(0.01)
 
-
 # In[18]:
-
 
 f(0.9)
 
-
 # In[19]:
-
 
 f(1)
 
-
 # In[20]:
-
 
 from pylab import *
 import math
@@ -209,9 +171,7 @@ def calcula_f(x):
 x = arange(0.1,2,0.01)
 y = calcula_f(x)
 
-
 # In[21]:
-
 
 plot (x, y)
 xlabel('Variável Independente x')
@@ -221,17 +181,12 @@ grid(True)
 axhline(y = 0, color = 'k')
 axvline(x = 0, color = 'k')
 
-
 # In[22]:
-
 
 x = symbols("x")
 f = Lambda(x, (x-1)/(x**2-1))
 f
-
-
 # In[1]:
-
 
 from sympy import symbols, Lambda
 
@@ -239,9 +194,4 @@ t = symbols("t")
 h = Lambda(t, (pow((t**2 + 9),1/2 )- 3) / (t**2))
 h
 
-
 # In[22]:
-
-
-
-
